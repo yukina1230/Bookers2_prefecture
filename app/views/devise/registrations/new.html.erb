@@ -13,24 +13,28 @@
           <%= f.email_field :email, autofocus: true, class: "email" %>
         </div>
         <div class="field">
-          <%= f.label :Postal_code %><br />
-          <%= f.text_field :postcode, autofocus: true, class: "postcode" %>
+          <%= f.label :postcode %><br />
+          <%= f.text_field :postcode, autofocus: true, autocomplete: "postcode", id: "user_postcode" %>
         </div>
+
         <div class="field">
-          <%= f.label :Prefecture_code %><br />
-          <%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :code, :name, { prompt: '選択してください' }, class: 'form-control' %>
+          <%= f.label :prefecture_name %><br />
+          <%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :code, :name, { prompt: '選択してください' }, id: "user_prefecture_name" %>
         </div>
+
         <div class="field">
-          <%= f.label :City %><br />
-          <%= f.text_field :adress_city, autofocus: true, class: "adress_city" %>
+          <%= f.label :address_city %><br />
+          <%= f.text_field :adress_city, autofocus: true, autocomplete: "aaddress_city", id: "user_adress_city" %>
         </div>
+
         <div class="field">
-          <%= f.label :Street %><br />
-          <%= f.text_field :adress_street, autofocus: true, class: "adress_street" %>
+          <%= f.label :address_street %><br />
+          <%= f.text_field :adress_street, autofocus: true, autocomplete: "address_street", id: "user_adress_street" %>
         </div>
+
         <div class="field">
-          <%= f.label :Building %><br />
-          <%= f.text_field :adress_building, autofocus: true, class: "adress_building" %>
+         <%= f.label :address_building %><br />
+         <%= f.text_field :adress_building, autofocus: true, autocomplete: "address_building" %>
         </div>
         <div class="field">
           <%= f.label :password %>
