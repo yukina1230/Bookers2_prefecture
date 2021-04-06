@@ -83,3 +83,115 @@ Migrating to AddColumnsToUsers (20210406032839)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 106.128.132.14 at 2021-04-06 03:44:59 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (5.2ms)
+Started GET "/" for 106.128.132.14 at 2021-04-06 03:45:00 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+Started GET "/" for 106.128.132.14 at 2021-04-06 03:45:02 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 20378ms (Views: 20358.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 19018ms (Views: 19015.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17545ms (Views: 17542.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:45:29 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 256ms (Views: 235.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:47:03 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:47:31 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/Bookers2_perfecture/app/views/devise/registrations/new.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...r.append=( f.label :Postal code );@output_buffer.safe_append...
+...                           ^~~~
+/home/ec2-user/environment/Bookers2_perfecture/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...pend=( f.label :Prefecture code );@output_buffer.safe_append...
+...                           ^~~~):
+  
+app/views/devise/registrations/new.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:47:48 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/Bookers2_perfecture/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...pend=( f.label :Prefecture code );@output_buffer.safe_append...
+...                           ^~~~):
+  
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:48:03 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 106.128.132.14 at 2021-04-06 03:48:32 +0000
+Cannot render console from 106.128.132.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
